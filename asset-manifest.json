@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/homeinstead/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/homeinstead/static/js/main.c94f6e64.chunk.js",
-    "main.js.map": "/homeinstead/static/js/main.c94f6e64.chunk.js.map",
-    "runtime-main.js": "/homeinstead/static/js/runtime-main.dc4ed5b4.js",
-    "runtime-main.js.map": "/homeinstead/static/js/runtime-main.dc4ed5b4.js.map",
-    "static/js/2.79d8e4a0.chunk.js": "/homeinstead/static/js/2.79d8e4a0.chunk.js",
-    "static/js/2.79d8e4a0.chunk.js.map": "/homeinstead/static/js/2.79d8e4a0.chunk.js.map",
-    "static/js/3.71e21496.chunk.js": "/homeinstead/static/js/3.71e21496.chunk.js",
-    "static/js/3.71e21496.chunk.js.map": "/homeinstead/static/js/3.71e21496.chunk.js.map",
-    "index.html": "/homeinstead/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/homeinstead/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.79d8e4a0.chunk.js.LICENSE.txt": "/homeinstead/static/js/2.79d8e4a0.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/homeinstead/static/media/logo.6ce24c58.svg"
+    "main.css": "/HomeInstead/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/HomeInstead/static/js/main.c94f6e64.chunk.js",
+    "main.js.map": "/HomeInstead/static/js/main.c94f6e64.chunk.js.map",
+    "runtime-main.js": "/HomeInstead/static/js/runtime-main.92fda971.js",
+    "runtime-main.js.map": "/HomeInstead/static/js/runtime-main.92fda971.js.map",
+    "static/js/2.79d8e4a0.chunk.js": "/HomeInstead/static/js/2.79d8e4a0.chunk.js",
+    "static/js/2.79d8e4a0.chunk.js.map": "/HomeInstead/static/js/2.79d8e4a0.chunk.js.map",
+    "static/js/3.71e21496.chunk.js": "/HomeInstead/static/js/3.71e21496.chunk.js",
+    "static/js/3.71e21496.chunk.js.map": "/HomeInstead/static/js/3.71e21496.chunk.js.map",
+    "index.html": "/HomeInstead/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/HomeInstead/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.79d8e4a0.chunk.js.LICENSE.txt": "/HomeInstead/static/js/2.79d8e4a0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/HomeInstead/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc4ed5b4.js",
+    "static/js/runtime-main.92fda971.js",
     "static/js/2.79d8e4a0.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.c94f6e64.chunk.js"
