@@ -2,7 +2,7 @@
   "name": "homeinstead",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://illusivebagel.github.io/homeinstead",
+  "homepage": "https://illusivebagel.github.io/HomeInstead",
   "dependencies": {
     "react": "^17.0.2",
     "react-big-calendar": "^0.38.1",
