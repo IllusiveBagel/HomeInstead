@@ -1,11 +1,15 @@
 import React from "react";
-import { Calendar, Views, momentLocalizer } from 'react-big-calendar'
+import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
 import events from "./events";
 
 const localizer = momentLocalizer(moment)
 
-let allViews = Object.keys(Views).map(k => Views[k])
+let formats = {
+  agendaHeaderFormat: ({ start, end }, culture, localizer) =>
+    localizer.format(start, 'DD/MM/YYYY', culture) + ' — ' +
+    localizer.format(end, 'DD/MM/YYYY', culture),
+}
 
 const ColoredDateCellWrapper = ({ children }) =>
   React.cloneElement(React.Children.only(children), {
@@ -28,7 +32,6 @@ const App = props => (
     }}>
       <Calendar
         events={events}
-        views={allViews}
         components={{
           timeSlotWrapper: ColoredDateCellWrapper,
         }}
@@ -37,6 +40,7 @@ const App = props => (
         defaultView='month'
         views={['month', 'week', 'day', 'agenda']}
         onSelectEvent={event => window.open(event.resource, '_blank').focus()}
+        formats={formats}
       />
     </div>
   </div>

@@ -1,6 +1,6 @@
 const now = new Date()
 
-export default [
+const events = [
     {
         id: 0,
         title: 'All Day Event Very Long Title',
@@ -33,4 +33,6 @@ export default [
         end: new Date(2021, 10, 23),
         resource: 'https://www.google.co.uk/'
     }
-]
+];
+
+export default events;
