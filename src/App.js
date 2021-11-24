@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Calendar, Views, momentLocalizer } from 'react-big-calendar'
+import moment from 'moment'
+import events from "./events";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const localizer = momentLocalizer(moment)
+
+let allViews = Object.keys(Views).map(k => Views[k])
+
+const ColoredDateCellWrapper = ({ children }) =>
+  React.cloneElement(React.Children.only(children), {
+    style: {
+      backgroundColor: 'lightblue',
+    },
+  })
+
+const App = props => (
+  <div style={{
+    width: '100vw',
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }}>
+    <div style={{
+      width: '80%',
+      height: '80%'
+    }}>
+      <Calendar
+        events={events}
+        views={allViews}
+        components={{
+          timeSlotWrapper: ColoredDateCellWrapper,
+        }}
+        localizer={localizer}
+        style={{ height: '100%' }}
+      />
     </div>
-  );
-}
+  </div>
+)
 
 export default App;
