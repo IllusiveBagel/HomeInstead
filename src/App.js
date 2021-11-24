@@ -34,6 +34,9 @@ const App = props => (
         }}
         localizer={localizer}
         style={{ height: '100%' }}
+        defaultView='month'
+        views={['month', 'week', 'day', 'agenda']}
+        onSelectEvent={event => window.open(event.resource, '_blank').focus()}
       />
     </div>
   </div>
