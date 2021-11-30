@@ -2,6 +2,8 @@ import React from "react";
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
 import events from "./events";
+import './App.css';
+import logo from './logo.svg';
 
 const localizer = momentLocalizer(moment)
 
@@ -14,29 +16,25 @@ let formats = {
 const ColoredDateCellWrapper = ({ children }) =>
   React.cloneElement(React.Children.only(children), {
     style: {
-      backgroundColor: 'lightblue',
+      backgroundColor: '#742059',
     },
   })
 
-const App = props => (
-  <div style={{
-    width: '100vw',
-    height: '100vh',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }}>
-    <div style={{
-      width: '80%',
-      height: '80%'
-    }}>
+const App = () => (
+  <div className="root">
+    <div className="container">
+      <div className="header">
+        <img className="logo" src={logo} alt="Homeinstead" />
+      </div>
       <Calendar
         events={events}
         components={{
-          timeSlotWrapper: ColoredDateCellWrapper,
+          eventWrapper: ColoredDateCellWrapper
         }}
         localizer={localizer}
-        style={{ height: '100%' }}
+        style={{ 
+          height: '85%',
+        }}
         defaultView='month'
         views={['month', 'week', 'day', 'agenda']}
         onSelectEvent={event => window.open(event.resource, '_blank').focus()}
