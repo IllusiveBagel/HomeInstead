@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/HomeInstead/static/css/main.badad195.chunk.css",
-    "main.js": "/HomeInstead/static/js/main.9abe3ef1.chunk.js",
-    "main.js.map": "/HomeInstead/static/js/main.9abe3ef1.chunk.js.map",
+    "main.css": "/HomeInstead/static/css/main.333b5ec5.chunk.css",
+    "main.js": "/HomeInstead/static/js/main.5cd7bd82.chunk.js",
+    "main.js.map": "/HomeInstead/static/js/main.5cd7bd82.chunk.js.map",
     "runtime-main.js": "/HomeInstead/static/js/runtime-main.e6c2eebc.js",
     "runtime-main.js.map": "/HomeInstead/static/js/runtime-main.e6c2eebc.js.map",
     "static/css/2.9aaf2cf1.chunk.css": "/HomeInstead/static/css/2.9aaf2cf1.chunk.css",
@@ -12,14 +12,15 @@
     "static/js/3.c9881f7c.chunk.js.map": "/HomeInstead/static/js/3.c9881f7c.chunk.js.map",
     "index.html": "/HomeInstead/index.html",
     "static/css/2.9aaf2cf1.chunk.css.map": "/HomeInstead/static/css/2.9aaf2cf1.chunk.css.map",
-    "static/css/main.badad195.chunk.css.map": "/HomeInstead/static/css/main.badad195.chunk.css.map",
-    "static/js/2.059a1443.chunk.js.LICENSE.txt": "/HomeInstead/static/js/2.059a1443.chunk.js.LICENSE.txt"
+    "static/css/main.333b5ec5.chunk.css.map": "/HomeInstead/static/css/main.333b5ec5.chunk.css.map",
+    "static/js/2.059a1443.chunk.js.LICENSE.txt": "/HomeInstead/static/js/2.059a1443.chunk.js.LICENSE.txt",
+    "static/media/logo.22ebb9c2.svg": "/HomeInstead/static/media/logo.22ebb9c2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e6c2eebc.js",
     "static/css/2.9aaf2cf1.chunk.css",
     "static/js/2.059a1443.chunk.js",
-    "static/css/main.badad195.chunk.css",
-    "static/js/main.9abe3ef1.chunk.js"
+    "static/css/main.333b5ec5.chunk.css",
+    "static/js/main.5cd7bd82.chunk.js"
   ]
 }
