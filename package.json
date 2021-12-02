@@ -8,10 +8,12 @@
     "globalize": "^1.7.0",
     "iana-tz-data": "^2019.1.0",
     "moment": "^2.29.1",
+    "papaparse": "^5.3.1",
     "react": "^17.0.2",
     "react-big-calendar": "^0.38.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "tabletop": "^1.6.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
