@@ -40,11 +40,13 @@ function App() {
           var endTime = data.data[i].endTime.split(':')
           var endDateTime = new Date(endDate[2], endDate[1]-1, endDate[0], endTime[0], endTime[1])
 
+          const allDay = (data.data[i].allDay.toLowerCase() === 'true');
+
           events.push(
             {
               id: i,
               title: data.data[i].title,
-              allDay: data.data[i].allDay,
+              allDay: allDay,
               start: startDateTime,
               end: endDateTime,
               resource: data.data[i].resource,
