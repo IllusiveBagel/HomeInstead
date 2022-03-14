@@ -22,14 +22,15 @@ const ColoredDateCellWrapper = ({ children }) =>
 
 function App() {
   const [data, setData] = useState([]);
+  const [locations, setLocation] = useState([]);
 
   useEffect(() => {
     Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vR69L6X2MEag5khuuB4TGDXtlpbJNPjP-CDCffxyZlyXtWKmDok_d1uZmnXJoKKcj1BmNQMu_JIOW97/pub?output=csv', {
       download: true,
       header: true,
       complete: (data) => {
-        console.log(data);
         var events = [];
+        var locations = [];
         for(var i = 0; i < data.data.length; i++) {
 
           const startDate = data.data[i].startDate.split('/');
@@ -42,6 +43,11 @@ function App() {
 
           const allDay = (data.data[i].allDay.toLowerCase() === 'true');
 
+          const resource = {
+            url: data.data[i].url,
+            location: data.data[i].location
+          }
+
           events.push(
             {
               id: i,
@@ -49,12 +55,16 @@ function App() {
               allDay: allDay,
               start: startDateTime,
               end: endDateTime,
-              resource: data.data[i].resource,
+              resource: resource,
             }
           );
+          if(!locations.includes(resource.location))
+          {
+            locations.push(resource.location);
+          }
         }
         setData(events);
-        console.log(events);
+        setLocation(locations);
       }
     })
   }, []);
@@ -64,6 +74,14 @@ function App() {
       <div className="container">
         <div className="header">
           <img className="logo" src={logo} alt="Homeinstead" />
+          <div className="filterArea">
+            <label for="location">Location</label>
+            <select id="location" name="location" className="location">
+              {locations.map(loc =>{
+                return <option value={loc}>{loc}</option>
+              })}
+            </select>
+          </div>
         </div>
         <Calendar
           events={data}
@@ -76,7 +94,7 @@ function App() {
           }}
           defaultView='month'
           views={['month', 'week', 'day', 'agenda']}
-          onSelectEvent={event => window.open(event.resource, '_blank').focus()}
+          onSelectEvent={event => window.open(event.resource.url, '_blank').focus()}
           formats={formats}
         />
       </div>
